@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ASPLaboration.Regissör>
+
+@{
+    ViewBag.Title = "Regissörer";
+}
+
+<h2>Regissörer</h2>
+
+<p>
+    @Html.ActionLink("Skapa ny", "SkapaNy")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Namn)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Namn)
+        </td>
+        <td>
+            @Html.ActionLink("Redigera", "Redigera", new { id=item.Id }) |
+            @Html.ActionLink("Detaljer", "Detaljer", new { id=item.Id }) |
+            @Html.ActionLink("Radera", "Radera", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

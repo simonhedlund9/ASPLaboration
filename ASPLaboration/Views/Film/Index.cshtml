@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ASPLaboration.Film>
+
+@{
+    ViewBag.Title = "Skapa ny";
+}
+
+<h2>Mina filmer</h2>
+
+<p>
+    @Html.ActionLink("Skapa ny Film", "SkapaNy")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.År)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Regissör.Namn)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.År)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Regissör.Namn)
+        </td>
+        <td>
+            @Html.ActionLink("Redigera", "Redigera", new { id=item.Id }) |
+            @Html.ActionLink("Detaljer", "Detaljer", new { id=item.Id }) |
+            @Html.ActionLink("Radera", "Radera", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

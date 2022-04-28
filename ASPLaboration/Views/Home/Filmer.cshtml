@@ -1,0 +1,25 @@
+﻿@model List<ASPLaboration.FilmService.FilmData>
+@{
+    ViewBag.Title = "Filmer";
+}
+
+<h2>Filmer</h2>
+<h3>Detta är några av mina favorit filmer och datan är hämtad från en wcf webbservice.</h3>
+
+<table class="table">
+
+    <tr>
+        <th>Titel</th>
+        <th>Regissör</th>
+        <th>År</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => item.Titel)</td>
+            <td>@Html.DisplayFor(m => item.Regissör)</td>
+            <td>@Html.DisplayFor(m => item.År)</td>
+        </tr>
+    }
+</table>
+

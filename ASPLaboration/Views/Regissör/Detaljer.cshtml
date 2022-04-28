@@ -1,0 +1,26 @@
+﻿@model ASPLaboration.Regissör
+
+@{
+    ViewBag.Title = "Detaljer";
+}
+
+<h2>Detaljer</h2>
+
+<div>
+    <h4>Regissör</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Namn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Namn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Redigera", "Redigera", new { id = Model.Id }) |
+    @Html.ActionLink("Gå tillbaka", "Index")
+</p>

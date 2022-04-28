@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ASPLaboration.Models.Rest>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Fler filmer!</h2>
+<h3>Detta är en till lista av några av mina favorit filmer och datan är hämtad genom ett RestAPI.</h3>
+
+<p>
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Regissör)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.År)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Regissör)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.År)
+        </td>
+        
+    </tr>
+}
+
+</table>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9a5a186-7f00-4f26-b26e-0eae7019181a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56304/FilmService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FilmService.wsdl" MetadataType="Wsdl" ID="ee4baa8a-2d40-4d94-b87b-2d713bc502b2" SourceId="1" SourceUrl="http://localhost:56304/FilmService.svc?wsdl" />
+    <MetadataFile FileName="FilmService.disco" MetadataType="Disco" ID="68537cb3-6e8c-4f65-88c9-24a02cd58dc6" SourceId="1" SourceUrl="http://localhost:56304/FilmService.svc?disco" />
+    <MetadataFile FileName="FilmService.xsd" MetadataType="Schema" ID="c290b054-3d7f-4417-8895-ea3c59221b2a" SourceId="1" SourceUrl="http://localhost:56304/FilmService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FilmService1.xsd" MetadataType="Schema" ID="ec91b977-fb0a-4676-8b59-7810653ff642" SourceId="1" SourceUrl="http://localhost:56304/FilmService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FilmService2.xsd" MetadataType="Schema" ID="07de6fad-1fc9-4f1b-8995-d4312c69f94b" SourceId="1" SourceUrl="http://localhost:56304/FilmService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

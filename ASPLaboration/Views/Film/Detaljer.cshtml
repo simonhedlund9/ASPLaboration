@@ -1,0 +1,42 @@
+﻿@model ASPLaboration.Film
+
+@{
+    ViewBag.Title = "Detaljer";
+}
+
+<h2>Detaljer</h2>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.År)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.År)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Regissör.Namn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Regissör.Namn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Redigera", "Redigera", new { id = Model.Id }) |
+    @Html.ActionLink("Gå tillbaka", "Index")
+</p>
